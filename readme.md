@@ -19,6 +19,11 @@ npm install
 php artisan migrate
 ```
 
+# Demo Credentials
+email: ram@gmail.com
+
+password: 123456
+
 # Database Design
 ![ER Diagram](snapshots/laravel_restaurant_er.png)
 
