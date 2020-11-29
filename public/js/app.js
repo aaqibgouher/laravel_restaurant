@@ -14480,7 +14480,30 @@ window.Vue = __webpack_require__(35);
 Vue.component('example-component', __webpack_require__(39));
 
 var app = new Vue({
-  el: '#app'
+    el: '#app'
+});
+
+$(document).ready(function () {
+    function update_price(price) {
+        $('#price').val(price);
+    }
+
+    function update_total() {
+        var qty = +$('#quantity').val();
+        var price = +$('#price').val();
+        var total = qty * price;
+        $('#total').val(total);
+    }
+
+    $("#item_select").on('change', function () {
+        var price = +$(this).find(":selected").data("price");
+        update_price(price);
+        update_total();
+    });
+
+    $("#quantity").on('change', function () {
+        update_total();
+    });
 });
 
 /***/ }),
