@@ -4,7 +4,7 @@
     <div class="row">
         <div class="col-sm-6 offset-sm-3">
             <div class="card mt-5">
-                <div class="card-header" style="text-align:center;"><h3><a style="color:black;" href="{{ route('home') }}">iTALENT RESTAURANT</a></h3></div>
+                <div class="card-header" style="text-align:center;"><h3>iTALENT RESTAURANT</h3><span><a href="{{ route('home') }}" class="btn btn-outline-success pull-right"><i class="fa fa-angle-double-left"></i></a></span></div>
                 <div class="card-body">
                     <h4>ADD ORDER</h4>
                     @if($message)
@@ -35,7 +35,7 @@
                             <label>Total</label>
                             <input type="number" class="form-control" name="total" value="0" id="total" disabled required>
                         </div>
-                        <input type="submit" name="submit" class="btn btn-success btn-block" value="Add Order"/>
+                        <input type="submit" name="submit" class="btn  btn-outline-success btn-block" value="Add Order"/>
                     </form>
                 </div>
             </div>  
