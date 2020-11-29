@@ -38,7 +38,7 @@ class InsertOrdersData extends Migration
             "quantity" => $quantity,
             "total" => $quantity*Product::find($product_id)->price,
             "created_by" => 3,
-            "created_at" => "29-11-2020 09:12:00"
+            "created_at" => "2020-11-29 09:12:00"
         ]);
         $product_id = 2;
         $quantity = 4;
@@ -47,7 +47,7 @@ class InsertOrdersData extends Migration
             "quantity" => $quantity,
             "total" => $quantity*Product::find($product_id)->price,
             "created_by" => 1,
-            "created_at" => "29-11-2020 12:12:00"
+            "created_at" => "2020-11-29 12:12:00"
         ]);
         $quantity = 6;
         DB::table("orders")->insert([
@@ -97,7 +97,7 @@ class InsertOrdersData extends Migration
             "quantity" => $quantity,
             "total" => $quantity*Product::find($product_id)->price,
             "created_by" => 1,
-            "created_at" => "29-11-2020 08:12:00"
+            "created_at" => "2020-11-29 08:12:00"
         ]);
         $quantity = 4;
         DB::table("orders")->insert([
@@ -113,7 +113,7 @@ class InsertOrdersData extends Migration
             "quantity" => $quantity,
             "total" => $quantity*Product::find($product_id)->price,
             "created_by" => 1,
-            "created_at" => "29-11-2020 04:12:00"
+            "created_at" => "2020-11-29 04:12:00"
         ]);
     }
 
